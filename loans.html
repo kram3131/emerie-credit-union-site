@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loans & Mortgages | Emerie Credit Union</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Serif+Display&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%230d7377'/><text x='50' y='68' font-size='52' fill='white' text-anchor='middle' font-family='Georgia'>E</text></svg>">
+</head>
+<body>
+
+  <!-- Demo Banner -->
+  <div class="demo-banner">
+    <strong>Demo Site</strong> Emerie Credit Union is a fictitious institution created to demonstrate the Emerie AI assistant. All information on this site is simulated.
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="unnamed-5-removebg-preview.png" alt="Emerie Credit Union" class="logo-img">
+      </a>
+
+      <nav class="nav">
+        <a href="about.html">About</a>
+        <a href="membership.html">Membership</a>
+        <a href="business.html">Business</a>
+        <a href="loans.html" class="active">Loans &amp; Mortgages</a>
+        <a href="locations.html">Locations</a>
+      </nav>
+
+      <a href="membership.html" class="btn btn--gold btn--sm nav-cta desktop-only">Join Now</a>
+
+      <button class="nav-toggle" aria-label="Open menu">
+        <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="nav-overlay"></div>
+  <div class="nav-mobile">
+    <button class="nav-mobile__close" aria-label="Close menu">
+      <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <a href="about.html">About</a>
+    <a href="membership.html">Membership</a>
+    <a href="business.html">Business</a>
+    <a href="loans.html">Loans &amp; Mortgages</a>
+    <a href="locations.html">Locations</a>
+    <a href="membership.html" class="btn btn--gold">Become a Member</a>
+  </div>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Loans &amp; Mortgages</h1>
+        <p>Personal loans, auto financing, home equity, and a full suite of mortgage products. All originated and underwritten locally by people who know Central Texas.</p>
+      </div>
+    </section>
+
+    <!-- Consumer Lending -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Consumer Lending</h2>
+          <p>Fixed rates, local underwriting, and no hidden fees. Members receive preferred rates on all loan products.</p>
+        </div>
+        <div class="grid grid--3">
+
+          <!-- Unsecured Personal Loan -->
+          <div class="lending-card">
+            <h3>Unsecured Personal Loan</h3>
+            <div class="lending-card__rate">8.49% to 15.99% APR</div>
+            <div class="lending-card__range">$2,500 to $50,000 | 12 to 60 months</div>
+            <ul>
+              <li>No collateral required</li>
+              <li>No origination fee</li>
+              <li>No prepayment penalty</li>
+              <li>Fixed rate and fixed monthly payment</li>
+              <li>$25 late fee (10+ days past due)</li>
+            </ul>
+          </div>
+
+          <!-- Share-Secured Personal Loan -->
+          <div class="lending-card">
+            <h3>Share-Secured Personal Loan</h3>
+            <div class="lending-card__rate">From 4.99% APR</div>
+            <div class="lending-card__range">$1,000 to value of pledged deposit (minus 10%) | 12 to 60 months</div>
+            <ul>
+              <li>Secured by ECU share savings or share certificate</li>
+              <li>Rate typically 2% to 3% above dividend rate</li>
+              <li>Pledged deposit continues earning dividends</li>
+              <li>Withdrawals restricted until loan repaid</li>
+            </ul>
+          </div>
+
+          <!-- New Auto Loan -->
+          <div class="lending-card">
+            <h3>New Auto Loan</h3>
+            <div class="lending-card__rate">From 5.49% APR (24-48 mo) / 5.99% APR (60-72 mo)</div>
+            <div class="lending-card__range">$10,000 to $100,000 | 24 to 72 months</div>
+            <ul>
+              <li>Current year and one prior model year</li>
+              <li>Up to 100% of purchase price plus TTL</li>
+              <li>$150 documentation fee</li>
+              <li>No prepayment penalty</li>
+            </ul>
+          </div>
+
+          <!-- Used Auto Loan -->
+          <div class="lending-card">
+            <h3>Used Auto Loan</h3>
+            <div class="lending-card__rate">From 6.29% APR (24-48 mo) / 6.79% APR (60 mo)</div>
+            <div class="lending-card__range">$5,000 to $75,000 | 24 to 60 months</div>
+            <ul>
+              <li>Up to 7 model years old under 100,000 miles</li>
+              <li>Dealer: up to 90% NADA retail value</li>
+              <li>Private party: up to 80% NADA retail value</li>
+              <li>$150 documentation fee</li>
+            </ul>
+          </div>
+
+          <!-- Auto Loan Refinance -->
+          <div class="lending-card">
+            <h3>Auto Loan Refinance</h3>
+            <div class="lending-card__rate">From 5.99% APR</div>
+            <div class="lending-card__range">Refinance existing auto loan from another lender</div>
+            <ul>
+              <li>Vehicle up to 7 years old under 100,000 miles</li>
+              <li>No application fee</li>
+            </ul>
+          </div>
+
+          <!-- RV and Recreational Vehicles -->
+          <div class="lending-card">
+            <h3>RV and Recreational Vehicles</h3>
+            <div class="lending-card__rate">New from 6.49% APR / Used from 7.29% APR</div>
+            <div class="lending-card__range">New: $10K to $250K | Used: $10K to $150K</div>
+            <ul>
+              <li>Motorhomes, travel trailers, fifth wheels, camper vans</li>
+              <li>New: up to 90% of purchase price</li>
+              <li>Used: up to 80% NADA (up to 10 years old)</li>
+              <li>$150 documentation fee, no prepayment penalty</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Home Equity Products -->
+    <section class="section section--sand">
+      <div class="container">
+        <div class="section-header">
+          <h2>Home Equity Products</h2>
+          <p>Access the equity in your home for improvements, debt consolidation, or major expenses.</p>
+        </div>
+        <div class="grid grid--2">
+
+          <!-- Home Equity Loan (Fixed Rate) -->
+          <div class="lending-card">
+            <h3>Home Equity Loan (Fixed Rate)</h3>
+            <div class="lending-card__rate">From 6.99% APR</div>
+            <ul>
+              <li>$10,000 to $250,000</li>
+              <li>Max 80% combined LTV</li>
+              <li>Terms: 60 to 180 months</li>
+              <li>Closing costs: $500 to $2,500 (appraisal included)</li>
+              <li>No prepayment penalty</li>
+              <li>Interest may be tax-deductible for home improvements</li>
+            </ul>
+          </div>
+
+          <!-- Home Equity Line of Credit (HELOC) -->
+          <div class="lending-card">
+            <h3>Home Equity Line of Credit (HELOC)</h3>
+            <div class="lending-card__rate">Currently 8.00% APR (Prime + 0.50%)</div>
+            <ul>
+              <li>$10,000 to $250,000</li>
+              <li>Max 80% combined LTV</li>
+              <li>10-year draw period (interest only)</li>
+              <li>20-year repayment period</li>
+              <li>Floor: 5.50% APR / Ceiling: 18.00% APR</li>
+              <li>Rate adjusts monthly with Prime Rate</li>
+              <li>$75 annual fee (waived first year)</li>
+              <li>$100 rate lock option available</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Mortgage Products -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Mortgage Products</h2>
+          <p>Work with the same loan officer from application through closing. Rates as of March 2026.</p>
+        </div>
+
+        <!-- Conventional Fixed-Rate -->
+        <div class="accordion-item open">
+          <button class="accordion-trigger">
+            Conventional Fixed-Rate
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content__inner">
+              <p><strong>30-year:</strong> 6.625% APR &nbsp; | &nbsp; <strong>20-year:</strong> 6.375% APR &nbsp; | &nbsp; <strong>15-year:</strong> 5.875% APR</p>
+              <ul style="list-style: disc; padding-left: var(--space-6); margin-top: var(--space-3);">
+                <li>Min 5% down for primary residence</li>
+                <li>PMI required under 20% down (auto-removed at 78% LTV)</li>
+                <li>Max $766,550 conforming loan limit</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- FHA Loan -->
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            FHA Loan
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content__inner">
+              <p><strong>30-year:</strong> 6.375% APR</p>
+              <ul style="list-style: disc; padding-left: var(--space-6); margin-top: var(--space-3);">
+                <li>3.5% down with 580+ credit score, 10% down with 500-579</li>
+                <li>Upfront MIP: 1.75% (can be financed)</li>
+                <li>Annual MIP: 0.45% to 1.05%</li>
+                <li>Max $766,550 in Austin/Round Rock area</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- VA Loan -->
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            VA Loan
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content__inner">
+              <p><strong>30-year:</strong> 6.25% APR</p>
+              <ul style="list-style: disc; padding-left: var(--space-6); margin-top: var(--space-3);">
+                <li>No down payment required</li>
+                <li>No private mortgage insurance</li>
+                <li>VA funding fee: 1.25% to 3.30%</li>
+                <li>Some veterans exempt from funding fee</li>
+                <li>No max loan for full entitlement</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jumbo Loan -->
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            Jumbo Loan
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content__inner">
+              <p><strong>30-year:</strong> 6.875% APR &nbsp; | &nbsp; <strong>15-year:</strong> 6.125% APR</p>
+              <ul style="list-style: disc; padding-left: var(--space-6); margin-top: var(--space-3);">
+                <li>$766,551 to $2,000,000</li>
+                <li>Min 20% down payment</li>
+                <li>Credit score 700+ generally required</li>
+                <li>Held in credit union portfolio</li>
+                <li>Primary residences and second homes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- USDA Rural Development -->
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            USDA Rural Development
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content__inner">
+              <p><strong>30-year:</strong> 6.375% APR</p>
+              <ul style="list-style: disc; padding-left: var(--space-6); margin-top: var(--space-3);">
+                <li>No down payment required</li>
+                <li>Eligible rural areas in Williamson and Bell counties</li>
+                <li>Income limits apply</li>
+                <li>Guarantee fee: 1.00% upfront + 0.35% annual</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- The Mortgage Process -->
+    <section class="section section--sand">
+      <div class="container">
+        <div class="section-header">
+          <h2>The Mortgage Process</h2>
+        </div>
+        <div class="stepper">
+          <div class="step">
+            <h4>Prequalification</h4>
+            <p>Online or by phone, no credit impact</p>
+          </div>
+          <div class="step">
+            <h4>Application</h4>
+            <p>Full application with tax returns, bank statements, pay stubs</p>
+          </div>
+          <div class="step">
+            <h4>Processing</h4>
+            <p>Appraisal, employment verification, file review</p>
+          </div>
+          <div class="step">
+            <h4>Conditional Approval</h4>
+            <p>Underwriter reviews; remaining conditions identified</p>
+          </div>
+          <div class="step">
+            <h4>Clear to Close</h4>
+            <p>All conditions met; Closing Disclosure issued</p>
+          </div>
+          <div class="step">
+            <h4>Closing</h4>
+            <p>Sign documents at title company; funds disbursed</p>
+          </div>
+        </div>
+        <p class="text-center text-muted" style="margin-top: var(--space-8);">Typical timeline: 30 to 45 days from application to closing.</p>
+      </div>
+    </section>
+
+    <!-- Refinance Options -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Refinance Options</h2>
+        </div>
+        <div class="grid grid--3">
+          <div class="card card--bordered-left">
+            <h3>Rate-and-Term Refinance</h3>
+            <p>Lower your payment, shorten your term, or switch from adjustable to fixed. Same rates as purchase loans.</p>
+          </div>
+          <div class="card card--bordered-left">
+            <h3>Cash-Out Refinance</h3>
+            <p>Max 80% LTV (conventional), 85% (FHA), 90% (VA). Rates typically 0.125% to 0.250% above standard.</p>
+          </div>
+          <div class="card card--bordered-left">
+            <h3>Streamline Refinance</h3>
+            <p>FHA Streamline and VA IRRRL with reduced documentation. May not require a new appraisal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Down Payment Assistance -->
+    <section class="section section--sand">
+      <div class="container">
+        <div class="callout">
+          <h3>Down Payment Assistance</h3>
+          <p>Emerie Credit Union participates in TSAHC and Southeast Texas Housing Finance Corporation programs offering grants or forgivable second liens.</p>
+          <ul style="list-style: disc; padding-left: var(--space-6); margin-top: var(--space-3);">
+            <li>Covers down payment and closing costs</li>
+            <li>Based on income, credit score, and location</li>
+            <li>Our loan officers help determine eligibility</li>
+          </ul>
+        </div>
+
+        <div style="margin-top: var(--space-8);">
+          <p class="text-small text-muted">$500 application fee (credited to closing costs). Closing costs typically 2% to 5% of loan amount.</p>
+          <p class="text-small text-muted" style="margin-top: var(--space-2);">Emerie Credit Union is an Equal Housing Lender. NMLS #482310. All loans subject to credit approval. Rates and terms subject to change. Mortgage Department: (512) 930-4550.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container" style="position: relative; z-index: 1;">
+        <h2>Ready to Become a Member?</h2>
+        <p>Visit any of our five Central Texas branches or apply for membership online. Joining takes minutes, and once you're a member, you're a member for life.</p>
+        <div class="btn-group">
+          <a href="membership.html" class="btn btn--gold btn--lg">Become a Member</a>
+          <a href="locations.html" class="btn btn--white btn--lg">Find a Branch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <img src="unnamed-5-removebg-preview.png" alt="Emerie Credit Union" class="logo-img">
+          <p>Member-owned financial services in Central Texas since 1987. Federally insured by NCUA.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="membership.html">Member Banking</a></li>
+            <li><a href="business.html">Business Services</a></li>
+            <li><a href="loans.html">Loans &amp; Mortgages</a></li>
+            <li><a href="locations.html">Locations &amp; Hours</a></li>
+          </ul>
+        </div>
+
+        <!-- Branches -->
+        <div>
+          <h4>Our Branches</h4>
+          <ul class="footer-contact">
+            <li><strong>Georgetown (HQ)</strong> <a href="tel:5129304500">(512) 930-4500</a></li>
+            <li><strong>Round Rock</strong> <a href="tel:5129304510">(512) 930-4510</a></li>
+            <li><strong>Cedar Park</strong> <a href="tel:5129304520">(512) 930-4520</a></li>
+            <li><strong>Austin - Domain</strong> <a href="tel:5129304530">(512) 930-4530</a></li>
+            <li><strong>Temple</strong> <a href="tel:5129304540">(512) 930-4540</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><strong>Toll-Free</strong> <a href="tel:18883647428">1-888-364-7428</a></li>
+            <li><strong>Lost/Stolen Card (24/7)</strong> <a href="tel:18883647429">1-888-364-7429</a></li>
+            <li><strong>Fraud Reporting (24/7)</strong> <a href="tel:18883647430">1-888-364-7430</a></li>
+            <li><strong>Mortgage</strong> <a href="tel:5129304550">(512) 930-4550</a></li>
+            <li><strong>Business Services</strong> <a href="tel:5129304560">(512) 930-4560</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Legal -->
+      <div class="footer-legal">
+        <div class="demo-disclaimer">
+          This website is a demonstration product of Emerie AI. Emerie Credit Union is not a real financial institution. All rates, offers, account details, branch locations, and contact information shown are entirely fictitious and for demo purposes only.
+        </div>
+        <p>&copy; 2026 Emerie Credit Union | Federally Insured by NCUA | Equal Housing Lender | NMLS #482310</p>
+        <p>Routing Number: 314089681</p>
+        <p>NCUA insures credit union deposits (share accounts) up to $250,000 per member.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

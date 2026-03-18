@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Services | Emerie Credit Union</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Serif+Display&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%230d7377'/><text x='50' y='68' font-size='52' fill='white' text-anchor='middle' font-family='Georgia'>E</text></svg>">
+</head>
+<body>
+
+  <!-- Demo Banner -->
+  <div class="demo-banner">
+    <strong>Demo Site</strong> Emerie Credit Union is a fictitious institution created to demonstrate the Emerie AI assistant. All information on this site is simulated.
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="unnamed-5-removebg-preview.png" alt="Emerie Credit Union" class="logo-img">
+      </a>
+      <nav class="nav">
+        <a href="about.html">About</a>
+        <a href="membership.html">Membership</a>
+        <a href="business.html" class="active">Business</a>
+        <a href="loans.html">Loans &amp; Mortgages</a>
+        <a href="locations.html">Locations</a>
+      </nav>
+      <a href="membership.html" class="btn btn--gold btn--sm nav-cta desktop-only">Join Now</a>
+      <button class="nav-toggle" aria-label="Open menu">
+        <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="nav-overlay"></div>
+  <div class="nav-mobile">
+    <button class="nav-mobile__close" aria-label="Close menu">
+      <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <a href="about.html">About</a>
+    <a href="membership.html">Membership</a>
+    <a href="business.html">Business</a>
+    <a href="loans.html">Loans &amp; Mortgages</a>
+    <a href="locations.html">Locations</a>
+    <a href="membership.html" class="btn btn--gold">Become a Member</a>
+  </div>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Business Services</h1>
+        <p>Banking solutions for small and mid-sized businesses across Central Texas. SBA Preferred Lender with local decision-making and member-preferred rates.</p>
+      </div>
+    </section>
+
+    <!-- Business Checking -->
+    <section class="section" id="checking">
+      <div class="container">
+        <div class="section-header">
+          <h2>Business Checking Accounts</h2>
+          <p>From sole proprietors to established corporations, we have the right account for your business.</p>
+        </div>
+
+        <div class="grid grid--4 stagger">
+          <!-- Business Basic -->
+          <div class="product-card animate-in">
+            <div class="product-card__header">
+              <div class="product-card__name">Business Basic</div>
+              <div class="product-card__price product-card__price--free">No monthly fee</div>
+            </div>
+            <div class="product-card__body">
+              <ul class="product-card__features">
+                <li>200 free transactions per month</li>
+                <li>$0.25 per additional transaction</li>
+                <li>$5,000 free cash deposits/month</li>
+                <li>Visa business debit card</li>
+                <li>Online and mobile banking</li>
+                <li>Mobile deposit and Bill Pay</li>
+              </ul>
+            </div>
+            <div class="product-card__footer">
+              <div class="product-card__limits">
+                Cash deposit overage: $1.50 per $1,000 &bull; Min opening: $100
+              </div>
+            </div>
+            <div class="product-card__action">
+              <a href="#" class="btn btn--primary">Open Account</a>
+            </div>
+          </div>
+
+          <!-- Business Plus -->
+          <div class="product-card animate-in">
+            <div class="product-card__header">
+              <div class="product-card__name">Business Plus</div>
+              <div class="product-card__price">$20.00/month</div>
+              <div class="product-card__waiver">Waived with $10,000 min daily balance</div>
+            </div>
+            <div class="product-card__body">
+              <ul class="product-card__features">
+                <li>500 free transactions per month</li>
+                <li>$0.20 per additional transaction</li>
+                <li>$10,000 free cash deposits/month</li>
+                <li>Free incoming domestic wires</li>
+                <li>2 free outgoing wires/month</li>
+                <li>Earnings credit on service charges</li>
+                <li>0.10% APY on balances over $10,000</li>
+              </ul>
+            </div>
+            <div class="product-card__footer">
+              <div class="product-card__limits">
+                Cash deposit overage: $1.50 per $1,000 &bull; Min opening: $500
+              </div>
+            </div>
+            <div class="product-card__action">
+              <a href="#" class="btn btn--primary">Open Account</a>
+            </div>
+          </div>
+
+          <!-- Business Premier -->
+          <div class="product-card product-card--featured animate-in">
+            <div class="product-card__badge">Best Value</div>
+            <div class="product-card__header">
+              <div class="product-card__name">Business Premier</div>
+              <div class="product-card__price">$35.00/month</div>
+              <div class="product-card__waiver">Waived with $50,000 min daily balance or $100,000 combined</div>
+            </div>
+            <div class="product-card__body">
+              <ul class="product-card__features">
+                <li>Unlimited transactions, no per-item fees</li>
+                <li>$25,000 free cash deposits/month</li>
+                <li>Unlimited free domestic wires</li>
+                <li>Dedicated relationship manager</li>
+                <li>Free positive pay fraud protection</li>
+                <li>Priority loan processing</li>
+                <li>0.20% APY on balances over $25,000</li>
+              </ul>
+            </div>
+            <div class="product-card__footer">
+              <div class="product-card__limits">
+                Cash deposit overage: $1.00 per $1,000 &bull; Min opening: $1,000
+              </div>
+            </div>
+            <div class="product-card__action">
+              <a href="#" class="btn btn--gold">Open Account</a>
+            </div>
+          </div>
+
+          <!-- Nonprofit -->
+          <div class="product-card animate-in">
+            <div class="product-card__header">
+              <div class="product-card__name">Nonprofit / Community</div>
+              <div class="product-card__price product-card__price--free">No monthly fee</div>
+            </div>
+            <div class="product-card__body">
+              <ul class="product-card__features">
+                <li>Available to 501(c)(3) organizations</li>
+                <li>300 free transactions per month</li>
+                <li>$10,000 free cash deposits/month</li>
+                <li>Fees beyond thresholds match Business Plus</li>
+                <li>Requires IRS determination letter</li>
+              </ul>
+            </div>
+            <div class="product-card__footer">
+              <div class="product-card__limits">
+                Min opening: $100
+              </div>
+            </div>
+            <div class="product-card__action">
+              <a href="#" class="btn btn--primary">Open Account</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business Savings & Money Market -->
+    <section class="section section--sand" id="savings">
+      <div class="container">
+        <div class="section-header">
+          <h2>Business Share Savings &amp; Money Market</h2>
+        </div>
+
+        <div class="grid grid--2 stagger">
+          <!-- Business Share Savings -->
+          <div class="product-card animate-in">
+            <div class="product-card__header">
+              <div class="product-card__name">Business Share Savings</div>
+              <div class="product-card__price">$5.00/month</div>
+              <div class="product-card__waiver">Waived with $1,000 min daily balance</div>
+            </div>
+            <div class="product-card__body">
+              <div class="tier-rates">
+                <div class="tier-rate">
+                  <span class="tier-rate__range">All balances</span>
+                  <span class="tier-rate__apy">0.30% APY</span>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__footer">
+              <div class="product-card__limits">Min opening deposit: $100</div>
+            </div>
+            <div class="product-card__action">
+              <a href="#" class="btn btn--primary">Open Account</a>
+            </div>
+          </div>
+
+          <!-- Business Money Market -->
+          <div class="product-card animate-in">
+            <div class="product-card__header">
+              <div class="product-card__name">Business Money Market Share Account</div>
+              <div class="product-card__price">$15.00/month</div>
+              <div class="product-card__waiver">Waived with $25,000 min daily balance</div>
+            </div>
+            <div class="product-card__body">
+              <div class="tier-rates">
+                <div class="tier-rate">
+                  <span class="tier-rate__range">$0 - $24,999</span>
+                  <span class="tier-rate__apy">0.30% APY</span>
+                </div>
+                <div class="tier-rate">
+                  <span class="tier-rate__range">$25,000 - $99,999</span>
+                  <span class="tier-rate__apy">3.50% APY</span>
+                </div>
+                <div class="tier-rate">
+                  <span class="tier-rate__range">$100,000 - $249,999</span>
+                  <span class="tier-rate__apy">3.75% APY</span>
+                </div>
+                <div class="tier-rate">
+                  <span class="tier-rate__range">$250,000+</span>
+                  <span class="tier-rate__apy">3.90% APY</span>
+                </div>
+              </div>
+              <ul class="product-card__features" style="margin-top: var(--space-4);">
+                <li>Up to 6 checks or transfers per cycle</li>
+              </ul>
+            </div>
+            <div class="product-card__footer">
+              <div class="product-card__limits">Min opening deposit: $5,000</div>
+            </div>
+            <div class="product-card__action">
+              <a href="#" class="btn btn--primary">Open Account</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business Lending -->
+    <section class="section" id="lending">
+      <div class="container">
+        <div class="section-header">
+          <h2>Business Lending</h2>
+          <p>Local underwriting and local decision-making. SBA Preferred Lender.</p>
+        </div>
+
+        <div class="grid grid--3 stagger">
+          <!-- Business Line of Credit -->
+          <div class="lending-card animate-in">
+            <h3>Business Line of Credit</h3>
+            <div class="lending-card__rate">8.50% - 10.50% APR</div>
+            <div class="lending-card__range">Revolving: $10,000 to $250,000</div>
+            <ul>
+              <li>Rate: Prime + 1.00% to Prime + 3.00%</li>
+              <li>Interest-only payments during draw period</li>
+              <li>$250 annual fee</li>
+            </ul>
+            <a href="#" class="btn btn--secondary btn--sm">Apply Now</a>
+          </div>
+
+          <!-- SBA 7(a) -->
+          <div class="lending-card animate-in">
+            <h3>SBA 7(a) Loans</h3>
+            <div class="lending-card__rate">Up to $5,000,000</div>
+            <div class="lending-card__range">Working capital, equipment, real estate, acquisition</div>
+            <ul>
+              <li>Terms up to 10 years (25 for real estate)</li>
+              <li>Emerie CU is an SBA Preferred Lender</li>
+            </ul>
+            <a href="#" class="btn btn--secondary btn--sm">Learn More</a>
+          </div>
+
+          <!-- SBA 504 -->
+          <div class="lending-card animate-in">
+            <h3>SBA 504 Loans</h3>
+            <div class="lending-card__rate">Up to $5,500,000</div>
+            <div class="lending-card__range">Long-term fixed-rate for major fixed assets</div>
+            <ul>
+              <li>10% borrower equity, 50% credit union, 40% CDC</li>
+              <li>Commercial real estate and heavy equipment</li>
+            </ul>
+            <a href="#" class="btn btn--secondary btn--sm">Learn More</a>
+          </div>
+
+          <!-- Commercial Real Estate -->
+          <div class="lending-card animate-in">
+            <h3>Commercial Real Estate</h3>
+            <div class="lending-card__rate">$100K - $5,000,000</div>
+            <div class="lending-card__range">Terms: 5 to 25 years</div>
+            <ul>
+              <li>Min 20% down (owner-occupied)</li>
+              <li>Min 25% down (investment)</li>
+              <li>Fixed or variable rates available</li>
+            </ul>
+            <a href="#" class="btn btn--secondary btn--sm">Apply Now</a>
+          </div>
+
+          <!-- Equipment Financing -->
+          <div class="lending-card animate-in">
+            <h3>Equipment Financing</h3>
+            <div class="lending-card__rate">From 7.25% APR</div>
+            <div class="lending-card__range">$5,000 to $500,000</div>
+            <ul>
+              <li>Terms up to 7 years (matched to equipment life)</li>
+              <li>Equipment serves as collateral</li>
+            </ul>
+            <a href="#" class="btn btn--secondary btn--sm">Apply Now</a>
+          </div>
+
+          <!-- SBA Express -->
+          <div class="lending-card animate-in">
+            <h3>SBA Express Loans</h3>
+            <div class="lending-card__rate">Up to $500,000</div>
+            <div class="lending-card__range">Faster processing than standard SBA</div>
+            <ul>
+              <li>Revolving or term options</li>
+              <li>Streamlined application process</li>
+            </ul>
+            <a href="#" class="btn btn--secondary btn--sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Treasury Management -->
+    <section class="section section--sand" id="treasury">
+      <div class="container">
+        <div class="section-header">
+          <h2>Treasury Management</h2>
+          <p>Available to Business Plus and Business Premier account holders.</p>
+        </div>
+
+        <div class="feature-grid stagger">
+          <div class="feature-item animate-in">
+            <div class="feature-item__icon">
+              <svg viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+            </div>
+            <div class="feature-item__label">ACH Origination</div>
+          </div>
+          <div class="feature-item animate-in">
+            <div class="feature-item__icon">
+              <svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </div>
+            <div class="feature-item__label">Remote Deposit Capture</div>
+          </div>
+          <div class="feature-item animate-in">
+            <div class="feature-item__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="feature-item__label">Positive Pay</div>
+          </div>
+          <div class="feature-item animate-in">
+            <div class="feature-item__icon">
+              <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <div class="feature-item__label">Zero Balance Accounts</div>
+          </div>
+          <div class="feature-item animate-in">
+            <div class="feature-item__icon">
+              <svg viewBox="0 0 24 24"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4z"/></svg>
+            </div>
+            <div class="feature-item__label">Sweep Accounts</div>
+          </div>
+          <div class="feature-item animate-in">
+            <div class="feature-item__icon">
+              <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <div class="feature-item__label">Account Analysis</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Merchant Services -->
+    <section class="section">
+      <div class="container">
+        <div class="two-col">
+          <div class="animate-in">
+            <h2>Merchant Services</h2>
+            <p>Credit and debit card processing through our third-party partner. Point-of-sale terminals, mobile readers, and e-commerce gateways available.</p>
+            <p>Contact Business Services at <a href="tel:5129304560">(512) 930-4560</a> to schedule a consultation.</p>
+          </div>
+          <div class="animate-in">
+            <div class="callout" style="margin: 0;">
+              <h3>How to Open a Business Account</h3>
+              <p>Sole proprietorships may apply online. All other business types must visit a branch. Business members must first qualify for individual credit union membership.</p>
+              <p style="margin-top: var(--space-3);"><strong>Required documents:</strong></p>
+              <ul style="margin-top: var(--space-2); padding-left: var(--space-5);">
+                <li style="font-size: var(--text-sm); color: var(--warm-700); padding: var(--space-1) 0; list-style: disc;">Articles of organization, incorporation, or partnership agreement</li>
+                <li style="font-size: var(--text-sm); color: var(--warm-700); padding: var(--space-1) 0; list-style: disc;">EIN (sole proprietors may use SSN)</li>
+                <li style="font-size: var(--text-sm); color: var(--warm-700); padding: var(--space-1) 0; list-style: disc;">Photo ID for all signers and beneficial owners (25%+)</li>
+                <li style="font-size: var(--text-sm); color: var(--warm-700); padding: var(--space-1) 0; list-style: disc;">Operating agreement or corporate resolution</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container" style="position: relative; z-index: 1;">
+        <h2>Ready to Grow Your Business?</h2>
+        <p>Our business banking team is here to help. Visit a branch or call us to get started.</p>
+        <div class="btn-group">
+          <a href="locations.html" class="btn btn--gold btn--lg">Find a Branch</a>
+          <a href="tel:5129304560" class="btn btn--white btn--lg">Call Business Services</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="unnamed-5-removebg-preview.png" alt="Emerie Credit Union" class="logo-img">
+          <p>Member-owned financial services in Central Texas since 1987. Federally insured by NCUA.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="membership.html">Member Banking</a></li>
+            <li><a href="business.html">Business Services</a></li>
+            <li><a href="loans.html">Loans &amp; Mortgages</a></li>
+            <li><a href="locations.html">Locations &amp; Hours</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Our Branches</h4>
+          <ul class="footer-contact">
+            <li><strong>Georgetown (HQ)</strong> <a href="tel:5129304500">(512) 930-4500</a></li>
+            <li><strong>Round Rock</strong> <a href="tel:5129304510">(512) 930-4510</a></li>
+            <li><strong>Cedar Park</strong> <a href="tel:5129304520">(512) 930-4520</a></li>
+            <li><strong>Austin - Domain</strong> <a href="tel:5129304530">(512) 930-4530</a></li>
+            <li><strong>Temple</strong> <a href="tel:5129304540">(512) 930-4540</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><strong>Toll-Free</strong> <a href="tel:18883647428">1-888-364-7428</a></li>
+            <li><strong>Lost/Stolen Card (24/7)</strong> <a href="tel:18883647429">1-888-364-7429</a></li>
+            <li><strong>Fraud Reporting (24/7)</strong> <a href="tel:18883647430">1-888-364-7430</a></li>
+            <li><strong>Mortgage</strong> <a href="tel:5129304550">(512) 930-4550</a></li>
+            <li><strong>Business Services</strong> <a href="tel:5129304560">(512) 930-4560</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <div class="demo-disclaimer">
+          This website is a demonstration product of Emerie AI. Emerie Credit Union is not a real financial institution. All rates, offers, account details, branch locations, and contact information shown are entirely fictitious and for demo purposes only.
+        </div>
+        <p>&copy; 2026 Emerie Credit Union | Federally Insured by NCUA | Equal Housing Lender | NMLS #482310</p>
+        <p>Routing Number: 314089681</p>
+        <p>NCUA insures credit union deposits (share accounts) up to $250,000 per member.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
