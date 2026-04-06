@@ -1,26 +1,5 @@
 const AGENT_ID = "fdd342d1-bf96-41fe-ac17-d67239b990eb";
 
-const navigateTool = {
-  temporaryTool: {
-    modelToolName: "navigateToPage",
-    description:
-      "Navigates the user's browser to a page on the Emerie Credit Union website. Use this when the user asks about a topic that has a dedicated page, or when you want to show them relevant information. Always tell the user you're navigating them before calling this tool.",
-    dynamicParameters: [
-      {
-        name: "page",
-        location: "PARAMETER_LOCATION_BODY",
-        schema: {
-          type: "string",
-          description:
-            "The page path to navigate to. Valid values: '/' (home), '/membership' (membership, checking, share savings, share certificates), '/business' (business services, business checking, business lending), '/loans' (consumer loans, auto loans, mortgages, home equity), '/locations' (branch locations, contact info, hours), '/about' (about the credit union, history, leadership, community)",
-          enum: ["/", "/membership", "/business", "/loans", "/locations", "/about"],
-        },
-        required: true,
-      },
-    ],
-    client: {},
-  },
-};
 
 const SYSTEM_PROMPT = `You are Alex, a warm and helpful virtual assistant for Emerie Credit Union. You're chatting with visitors on the credit union's website through voice. Think of yourself as the friendly person at the front desk who genuinely enjoys helping people.
 
@@ -67,7 +46,7 @@ Never promise loan approvals, rate locks, or fee waivers.
 
 Website Navigation
 
-You're on the Emerie Credit Union website. When a visitor asks about a topic that has its own page, you can open it for them using the navigateToPage tool. The page opens in a new tab so your conversation continues uninterrupted. Let them know: "Let me pull up our membership page for you..." After the tool runs, do NOT repeat what you already said. Just ask a short follow-up like "Want me to walk you through the details?" Available pages: home, membership, business services, loans & mortgages, locations, and about us.
+You're on the Emerie Credit Union website. You cannot navigate the visitor to other pages, but you can tell them where to find information. For example: "You can find all the details on our membership page — just click Membership in the nav at the top." Available pages: home, membership, business services, loans & mortgages, locations, and about us.
 
 Number Pronunciation
 
@@ -229,9 +208,8 @@ export default async function handler(req, res) {
       selectedTools: [
         ...(tpl.selectedTools || []).filter(t => {
           const name = t?.temporaryTool?.modelToolName || t?.toolName || "";
-          return name !== "transferCall" && name !== "hangUp";
+          return name !== "transferCall" && name !== "hangUp" && name !== "navigateToPage";
         }),
-        navigateTool,
       ],
     };
 

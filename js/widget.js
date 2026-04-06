@@ -222,35 +222,6 @@
         return origPlay.call(this);
       };
 
-      // Register navigateToPage tool
-      // Opens the page in a new tab so the voice call stays alive
-      ultravoxSession.registerToolImplementation(
-        "navigateToPage",
-        (params) => {
-          const page = params.page || "/";
-          const routeMap = {
-            "/": "/",
-            "/index.html": "/",
-            "/membership": "/membership.html",
-            "/membership.html": "/membership.html",
-            "/business": "/business.html",
-            "/business.html": "/business.html",
-            "/loans": "/loans.html",
-            "/loans.html": "/loans.html",
-            "/locations": "/locations.html",
-            "/locations.html": "/locations.html",
-            "/about": "/about.html",
-            "/about.html": "/about.html",
-          };
-          const target = routeMap[page];
-          if (target) {
-            window.open(target, "_blank");
-            return `Done. Page opened in a new tab. Do NOT repeat what you already said. Just ask a brief follow-up like "Want me to walk you through what's on the page?" or "Anything specific you'd like to know?"`;
-          }
-          return `Invalid page: ${page}. Continue the conversation without navigating.`;
-        }
-      );
-
       ultravoxSession.addEventListener("status", () => {
         updateStatus(ultravoxSession.status);
       });
