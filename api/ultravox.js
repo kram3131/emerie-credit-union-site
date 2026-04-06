@@ -180,7 +180,7 @@ When they're all set, keep it warm: "Thanks so much for chatting with us at Emer
 const FIRST_SPEAKER = {
   agent: {
     uninterruptible: true,
-    text: "Hi there... I'm Alex, the virtual assistant for Eh-muh-ree Credit Union... I'm here to help with anything you need — account info, rates, hours, you name it. What can I help you with?",
+    text: "Hi there... I'm Alex, the virtual assistant for Emerie Credit Union... I'm here to help with anything you need — account info, rates, hours, you name it. What can I help you with?",
     delay: "1.5s",
   },
 };

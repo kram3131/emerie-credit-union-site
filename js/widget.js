@@ -154,29 +154,48 @@
   }
 
   // ═══ TRANSCRIPTS ═══
+  let renderedCount = 0;
+
   function clearTranscripts() {
+    renderedCount = 0;
     transcriptArea.innerHTML = `<div class="empty-state">Tap the microphone to talk with our AI assistant.</div>`;
   }
 
   function renderTranscripts(transcripts) {
-    transcriptArea.innerHTML = "";
-    if (transcripts.length === 0) {
-      transcriptArea.innerHTML = `<div class="empty-state">${isActive() ? STATUS_LABELS[status] : "Tap the microphone to talk with our AI assistant."}</div>`;
-      return;
+    // Remove empty state on first transcript
+    const empty = transcriptArea.querySelector(".empty-state");
+    if (empty && transcripts.length > 0) empty.remove();
+
+    for (let i = 0; i < transcripts.length; i++) {
+      const t = transcripts[i];
+      const existingEl = transcriptArea.children[i];
+
+      if (existingEl) {
+        // Update existing bubble text and final state in place
+        const bubble = existingEl.querySelector(".bubble");
+        if (bubble) {
+          if (bubble.textContent !== t.text) bubble.textContent = t.text;
+          bubble.classList.toggle("interim", !t.isFinal);
+        }
+      } else {
+        // Append new bubble
+        const wrapper = document.createElement("div");
+        wrapper.className = `voice-msg ${t.speaker}`;
+        const bubble = document.createElement("div");
+        bubble.className = `bubble${t.isFinal ? "" : " interim"}`;
+        bubble.textContent = t.text;
+        wrapper.appendChild(bubble);
+        transcriptArea.appendChild(wrapper);
+      }
     }
-    transcripts.forEach((t) => {
-      const wrapper = document.createElement("div");
-      wrapper.className = `voice-msg ${t.speaker}`;
-      const bubble = document.createElement("div");
-      bubble.className = `bubble${t.isFinal ? "" : " interim"}`;
-      bubble.textContent = t.text;
-      wrapper.appendChild(bubble);
-      transcriptArea.appendChild(wrapper);
-    });
-    // Scroll to bottom
-    requestAnimationFrame(() => {
-      transcriptArea.scrollTop = transcriptArea.scrollHeight;
-    });
+
+    // Scroll to bottom only when new items appear
+    if (transcripts.length > renderedCount) {
+      renderedCount = transcripts.length;
+      requestAnimationFrame(() => {
+        transcriptArea.scrollTop = transcriptArea.scrollHeight;
+      });
+    }
   }
 
   // ═══ SESSION ═══
