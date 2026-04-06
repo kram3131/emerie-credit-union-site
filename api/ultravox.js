@@ -222,7 +222,13 @@ export default async function handler(req, res) {
       systemPrompt: SYSTEM_PROMPT,
       medium: { webRtc: {} },
       firstSpeakerSettings: FIRST_SPEAKER,
-      selectedTools: [...(tpl.selectedTools || []), navigateTool],
+      selectedTools: [
+        ...(tpl.selectedTools || []).filter(t => {
+          const name = t?.temporaryTool?.modelToolName || t?.toolName || "";
+          return name !== "transferCall" && name !== "hangUp";
+        }),
+        navigateTool,
+      ],
     };
 
     if (tpl.model) callBody.model = tpl.model;
