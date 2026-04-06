@@ -193,7 +193,7 @@
       }
       const { joinUrl } = await res.json();
 
-      const { UltravoxSession } = await import("./js/ultravox-bundle.js");
+      const { UltravoxSession } = await import("/js/ultravox-bundle.js");
       ultravoxSession = new UltravoxSession();
 
       // Force normal audio playback
